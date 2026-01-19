@@ -583,6 +583,28 @@ export default function Home() {
           </div>
         </section>
       </main>
+
+      <footer className="relative z-10 border-t border-white/10 bg-white/5">
+        <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-6 px-6 py-8 text-sm text-white/70 md:flex-row">
+          <div className="flex flex-col items-center gap-2 md:items-start">
+            <span className="text-white">Face Shape Detector</span>
+            <span>
+              Contact:{" "}
+              <a className="text-white hover:text-cyan-200" href="mailto:support@faceshapedetector.top">
+                support@faceshapedetector.top
+              </a>
+            </span>
+          </div>
+          <div className="flex items-center gap-6">
+            <a className="hover:text-white" href="/privacy">
+              Privacy
+            </a>
+            <a className="hover:text-white" href="/terms">
+              Terms
+            </a>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
