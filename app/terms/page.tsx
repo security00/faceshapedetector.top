@@ -1,4 +1,13 @@
-"use client";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms of Service | Face Shape Detector App",
+  description:
+    "Review the terms for using Face Shape Detector, including acceptable use, accuracy limits, intellectual property, and liability information.",
+  alternates: {
+    canonical: "/terms",
+  },
+};
 
 export default function TermsPage() {
   return (

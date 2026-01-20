@@ -511,7 +511,7 @@ export default function Home() {
             <div className="flex flex-col gap-8 text-center md:flex-row md:text-left">
               <div className="md:w-1/3">
                 <p className="text-xs uppercase tracking-[0.3em] text-white/50">How it works</p>
-                <h3 className="mt-3 text-2xl font-semibold text-white">Three steps to your face shape</h3>
+                <h2 className="mt-3 text-2xl font-semibold text-white">Three steps to your face shape</h2>
                 <p className="mt-4 text-sm text-white/70">
                   Designed for fast, accurate analysis with a smooth user experience.
                 </p>
@@ -526,7 +526,7 @@ export default function Home() {
                       {index + 1}
                     </span>
                     <div>
-                      <h4 className="text-base font-semibold text-white">{step.title}</h4>
+                      <h3 className="text-base font-semibold text-white">{step.title}</h3>
                       <p className="mt-1 text-sm text-white/70">{step.description}</p>
                     </div>
                   </div>
@@ -537,6 +537,13 @@ export default function Home() {
         </section>
 
         <section id="features" className="mx-auto w-full max-w-6xl px-6 pb-20">
+          <div className="mb-8 text-center">
+            <p className="text-xs uppercase tracking-[0.3em] text-white/50">Features</p>
+            <h2 className="mt-3 text-2xl font-semibold text-white">Why people choose us</h2>
+            <p className="mt-3 text-sm text-white/70">
+              Fast, private, and designed to give you actionable insights.
+            </p>
+          </div>
           <div className="grid gap-6 md:grid-cols-3">
             {features.map((feature) => (
               <div
@@ -557,7 +564,7 @@ export default function Home() {
           <div className="rounded-[32px] border border-white/10 bg-white/5 p-10 backdrop-blur">
             <div className="text-center">
               <p className="text-xs uppercase tracking-[0.3em] text-white/50">Pricing</p>
-              <h3 className="mt-3 text-2xl font-semibold text-white">Plans for every stage</h3>
+              <h2 className="mt-3 text-2xl font-semibold text-white">Plans for every stage</h2>
               <p className="mt-3 text-sm text-white/70">
                 Start with demo data, then connect HiFace when you’re ready for production.
               </p>
@@ -579,6 +586,124 @@ export default function Home() {
                   </button>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="guide" className="mx-auto w-full max-w-6xl px-6 pb-24">
+          <div className="rounded-[32px] border border-white/10 bg-white/5 p-10 backdrop-blur">
+            <div className="text-center">
+              <p className="text-xs uppercase tracking-[0.3em] text-white/50">Guide</p>
+              <h2 className="mt-3 text-2xl font-semibold text-white">Face Shape Detector Guide</h2>
+              <p className="mt-3 text-sm text-white/70">
+                Learn what face shapes mean, how to get the most accurate results, and why a face
+                shape detector can help you choose styles with confidence.
+              </p>
+            </div>
+
+            <div className="mt-10 grid gap-8 text-sm text-white/75 lg:grid-cols-2">
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-base font-semibold text-white">What is a face shape?</h3>
+                  <p className="mt-2">
+                    Face shape describes the overall balance between your forehead, cheekbones, and
+                    jawline. It is not about perfection or fixed categories; instead, it is a simple
+                    way to summarize your natural proportions. A face shape detector looks at those
+                    proportions and maps them into a familiar type such as oval, round, square,
+                    heart, diamond, or rectangle. These labels are helpful shortcuts for picking
+                    flattering hairstyles, glasses, makeup placement, and even beard shaping.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-base font-semibold text-white">How our face shape detector works</h3>
+                  <p className="mt-2">
+                    The experience is designed to be fast and privacy-first. Your photo is analyzed
+                    locally in the browser using landmarks from a lightweight computer-vision model.
+                    The detector measures distances such as face length, cheekbone width, and jaw
+                    width. It then compares the ratios to known ranges for each face type. This is
+                    why lighting, camera angle, and a neutral expression matter—good inputs help the
+                    model produce stable, repeatable measurements.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-base font-semibold text-white">How to take the best photo</h3>
+                  <p className="mt-2">
+                    For the most accurate face shape detector results, use a front-facing photo with
+                    even lighting and no heavy shadows. Keep your head straight, eyes level, and hair
+                    tucked behind the ears if possible. Avoid wide-angle distortion by stepping back
+                    slightly and letting the camera zoom in. Remove glasses and hats so the forehead
+                    and jawline are visible. A neutral expression helps the landmark model lock onto
+                    your features without bias from a smile or squint.
+                  </p>
+                </div>
+              </div>
+
+              <div className="space-y-6">
+                <div>
+                  <h3 className="text-base font-semibold text-white">Face shapes explained</h3>
+                  <p className="mt-2">
+                    Oval faces are slightly longer than they are wide and tend to have balanced
+                    proportions. Round faces are similar in length and width with softer angles.
+                    Square faces have a strong jawline and similar widths across forehead, cheeks,
+                    and jaw. Heart faces feature a wider forehead and a narrower chin. Diamond faces
+                    have prominent cheekbones with a narrower forehead and jaw. Rectangle faces are
+                    longer with more uniform widths and a straighter jawline. Your face shape
+                    detector result summarizes these characteristics, but individual variation is
+                    always normal.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-base font-semibold text-white">Styling ideas by face type</h3>
+                  <p className="mt-2">
+                    If your face shape detector reports round, styles with height and angles can add
+                    length. For square faces, softer layers and side parts reduce sharpness. Heart
+                    shapes often look great with chin-length bobs and side-swept fringe. Oval faces
+                    suit most styles and can experiment freely. Diamond shapes benefit from volume at
+                    the jawline or temples to balance cheekbones. Rectangle faces look best with
+                    texture and width on the sides to break up length.
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="text-base font-semibold text-white">Privacy and accuracy</h3>
+                  <p className="mt-2">
+                    This face shape detector runs on-device by default, so your images do not leave
+                    your browser. Results are informational and can vary based on lighting or camera
+                    angle, so feel free to try multiple photos for consistency. If you later enable
+                    a cloud API, the provider may process the image temporarily for analysis. We will
+                    always aim to keep the experience transparent, fast, and respectful of your data.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-10 space-y-6 text-sm text-white/75">
+              <div>
+                <h3 className="text-base font-semibold text-white">Frequently asked questions</h3>
+                <p className="mt-2">
+                  <span className="font-semibold text-white">Is this face shape detector accurate?</span>{" "}
+                  It is designed to be consistent for clear, front-facing photos. For best results,
+                  try a few images and compare the confidence scores across types.
+                </p>
+                <p className="mt-2">
+                  <span className="font-semibold text-white">Why do I get different results?</span>{" "}
+                  Changes in lighting, camera distance, and head tilt can alter proportions. Keeping
+                  a neutral pose improves stability.
+                </p>
+                <p className="mt-2">
+                  <span className="font-semibold text-white">Can I use this on mobile?</span>{" "}
+                  Yes. The face shape detector runs inside your browser and works on modern mobile
+                  devices, though older phones may load the model more slowly.
+                </p>
+                <p className="mt-2">
+                  <span className="font-semibold text-white">Do you store my photos?</span>{" "}
+                  No. On-device analysis does not upload images. If a cloud integration is enabled
+                  later, processing rules will be clearly disclosed.
+                </p>
+              </div>
             </div>
           </div>
         </section>
